@@ -69,3 +69,116 @@
   color: #e65100; /* Arancione al passaggio del mouse sui link */
   text-decoration: underline;
 }
+ /* ==========================================
+     STILI FOOTER (SINCRONIZZATI CON I CONTATTI)
+     ========================================== */
+  .site-footer {
+    background-color: #fff5f0; /* Stesso sfondo rosa pesca tenue della sezione contatti */
+    border-top: 1px solid #fce2d6;
+    margin-top: 60px;
+    padding-top: 40px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 30px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  
+  .footer-col h3 {
+    color: #bf360c; /* Stesso rosso/marrone dei titoli nei contatti */
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  /* Linea decorativa arancione sotto i titoli */
+  .footer-col h3::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #f57c00;
+    margin-top: 8px;
+  }
+  
+  .footer-col p {
+    color: #6d4c41; /* Stesso marrone tenue del testo contatti */
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  
+  /* Elenco dei link */
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #6d4c41;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease, padding-left 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #e65100; /* Arancione al passaggio del mouse */
+    padding-left: 5px;
+  }
+  
+  /* Icone Social */
+  .footer-socials {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fffde7; /* Sfondo giallo crema delle schede */
+    color: #f57c00; /* Icona arancione */
+    border: 1px solid #fff59d;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-socials a:hover {
+    background-color: #f57c00; /* Fondo arancione al passaggio del mouse */
+    color: #ffffff; /* Icona bianca */
+    border-color: #f57c00;
+    transform: translateY(-3px);
+  }
+  
+  /* Parte inferiore del Copyright */
+  .footer-bottom {
+    border-top: 1px solid #fce2d6;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffebe0; /* Tonalità leggermente più scura per distinguere la fascia finale */
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    color: #6d4c41;
+    font-size: 0.85rem;
+  }
+  
+  /* Responsive per la parte inferiore */
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
