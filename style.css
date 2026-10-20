@@ -1,1 +1,71 @@
 
+/* Container principale della sezione contatti */
+.sezione-contatti {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff5f0; /* Rosso chiaro / Rosa pesca tenue */
+  padding: 40px 20px;
+  border-radius: 16px;
+  border: 1px solid #fce2d6;
+  box-shadow: 0 4px 20px rgba(230, 81, 0, 0.06);
+  overflow-x: auto; /* Permette lo scorrimento orizzontale se lo schermo è troppo stretto */
+}
+
+.sezione-contatti h2 {
+  text-align: center;
+  color: #d9531e; /* Arancione terracotta per il titolo */
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+/* Layout a tre colonne fisse affiancate */
+.griglia-contatti {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonne sempre affiancate */
+  gap: 30px;
+  min-width: 600px; /* Garantisce la larghezza minima sufficiente per mantenere 3 colonne */
+}
+
+/* Stile della singola colonna */
+.colonna-contatto {
+  background-color: #fffde7; /* Giallo crema chiaro */
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 1px solid #fff59d; /* Bordo giallo tenue */
+}
+
+/* Effetto hover sulla colonna */
+.colonna-contatto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(230, 81, 0, 0.12);
+  border-color: #ffe082; /* Bordo giallo/arancio più caldo al passaggio del mouse */
+}
+
+/* Icone */
+.colonna-contatto i {
+  font-size: 2.5rem;
+  color: #f57c00; /* Arancione vivo per le icone */
+  margin-bottom: 15px;
+}
+
+/* Titoli e testo delle colonne */
+.colonna-contatto h3 {
+  color: #bf360c; /* Rosso/marrone caldo per i titoli delle colonne */
+  margin-bottom: 15px;
+  font-size: 1.25rem;
+}
+
+.colonna-contatto p, 
+.colonna-contatto a {
+  color: #6d4c41; /* Marrone caldo tenue per il testo */
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.colonna-contatto a:hover {
+  color: #e65100; /* Arancione al passaggio del mouse sui link */
+  text-decoration: underline;
+}
