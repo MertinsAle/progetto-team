@@ -1,11 +1,48 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Prenotazione cibo</title>
 </head>
 <body>
-    
+
+    <h1>Prenota il tuo cibo</h1>
+
+    <form>
+        <label>Scegli il cibo:</label>
+
+        <select name="cibo">
+            <option>Pizza</option>
+            <option>Hamburger</option>
+            <option>Panino</option>
+            <option>Patatine</option>
+        </select>
+
+        <br><br>
+
+        <label>Quantità:</label>
+        <input type="number" name="quantita" min="1" value="1">
+
+        <br><br>
+
+        <button type="submit">Aggiungi</button>
+    </form>
+
+    <hr>
+
+    <h2>Scontrino</h2>
+
+    <p>Pizza ............ €7,00</p>
+    <p>Hamburger .... €8,00</p>
+    <p>Patatine ........ €3,00</p>
+
+    <hr>
+
+    <h3>Totale: €18,00</h3>
+
+    <button type="button" onclick="this.textContent='Prenotazione effettuata!'">
+        Prenota
+    </button>
+
 </body>
 </html>
